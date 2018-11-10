@@ -30,8 +30,8 @@ function viewCart() {
       baseString = baseString + `, and ${cart[i].itemName} at ${cart[i].itemPrice}`;
     } else {
       baseString = baseString + `, ${cart[i].itemName} at ${cart[i].itemPrice}`;
-      i++;
     }
+    i++;
   }
   baseString = baseString + '.';
 }
