@@ -26,7 +26,7 @@ function viewCart() {
   let i = 1;
   baseString = baseString + `${cart[0].itemName} at $${cart[0].itemPrice}`;
   while (i < cart.length) {
-    if (i == cart.length - 2) {
+    if (i == cart.length - 1) {
       baseString = baseString + `, and ${cart[i].itemName} at $${cart[i].itemPrice}`;
     } else {
       baseString = baseString + `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
