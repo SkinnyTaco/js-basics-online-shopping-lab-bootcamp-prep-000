@@ -34,6 +34,7 @@ function viewCart() {
     i++;
   }
   baseString = baseString + '.';
+  return baseString;
 }
 
 function total() {
