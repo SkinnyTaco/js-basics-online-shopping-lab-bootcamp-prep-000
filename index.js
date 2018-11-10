@@ -67,3 +67,4 @@ function placeOrder(cardNumber) {
   console.log(totalValue);
   return `Your total cost is $${totalValue}, which will be charged to the card ${cardNumber}.`;
 }
+placeOrder();
