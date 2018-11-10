@@ -21,13 +21,17 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  if (cart.length == 0) return 'Your shopping cart is empty';
+  if (cart.length == 0) return 'Your shopping cart is empty.';
   let baseString = 'In your cart, you have ';
   let i = 1;
   baseString = baseString + `${cart[0].itemName} at ${cart[0].itemPrice}`;
   while (i < cart.length) {
+    if (i == cart.length - 2) {
+      baseString = baseString + `, and ${cart[i].itemName} at ${cart[i].itemPrice}`;
+    } else {
     baseString = baseString + `, ${cart[i].itemName} at ${cart[i].itemPrice}`;
     i++;
+    }
   }
   baseString = baseString + '.';
 }
