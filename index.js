@@ -29,8 +29,8 @@ function viewCart() {
     if (i == cart.length - 2) {
       baseString = baseString + `, and ${cart[i].itemName} at ${cart[i].itemPrice}`;
     } else {
-    baseString = baseString + `, ${cart[i].itemName} at ${cart[i].itemPrice}`;
-    i++;
+      baseString = baseString + `, ${cart[i].itemName} at ${cart[i].itemPrice}`;
+      i++;
     }
   }
   baseString = baseString + '.';
